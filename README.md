@@ -1,12 +1,14 @@
 ### IdeaShare!
-```Quickstart server
+*Quickstart server*
+```
 clone
 cd server
 npm install or yarn add
 nodemon or node index.js
 ```
 
-```Quickstart client
+*Quickstart client*
+```
 cd client
 npm install
 npm run dev
