@@ -1,4 +1,4 @@
-import { ApolloServer, gql } from "apollo-server-lambda";
+import { ApolloServer } from "apollo-server-lambda";
 import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-core";
 import typeDefs from "./logic/schemaGql.js";
 import mongoose, { mongo } from "mongoose";
@@ -56,4 +56,4 @@ const server = new ApolloServer({
 // server.listen().then(({ url }) => {
 //     console.log(`🚀  Server ready at ${url}`);
 // });
-exports.handler = server.createHandler();
+export const handler = server.createHandler();
